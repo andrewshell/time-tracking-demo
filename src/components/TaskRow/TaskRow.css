@@ -1,0 +1,52 @@
+.TaskRow {
+    display: flex;
+    flex-direction: column;
+}
+
+.TaskRow .summary {
+    background-color: #fff;
+    border-bottom: 1px solid #E8E8E8;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+}
+
+.TaskRow .leftMargin {
+    flex: 0 0 6em;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+    text-align: right;
+}
+
+.TaskRow .duration {
+    margin-right: 1.5em;
+}
+
+.TaskRow .hidden {
+    display: none;
+}
+
+.TaskRow .taskName {
+    margin-left: 0.2em;
+    flex: 1 1;
+}
+
+.TaskRow .continueButton {
+    background: transparent;
+    border: none;
+    color: #03DAC6;
+    cursor: pointer;
+    visibility: hidden;
+    font-size: 14px;
+    outline: none;
+}
+
+.TaskRow .summary:hover .continueButton {
+    visibility: visible;
+}
+
+.TaskRow .continueButton:hover {
+    background: #03DAC6;
+    color: #fff;
+}

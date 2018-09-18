@@ -1,0 +1,658 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"title",
+				"title-row"
+			],
+			[
+				"s",
+				"startOf\tmethod"
+			],
+			[
+				"ord",
+				"orderKey\tgetter"
+			],
+			[
+				"count",
+				"countries"
+			],
+			[
+				"subre",
+				"subregion"
+			],
+			[
+				"sub",
+				"subregions"
+			],
+			[
+				"reg",
+				"regions"
+			],
+			[
+				"subreg",
+				"subregion"
+			],
+			[
+				"seriali",
+				"serializeFailure"
+			],
+			[
+				"sort",
+				"sortedApi"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"get",
+				"getByTestId"
+			],
+			[
+				"enti",
+				"entityDates\tgetter"
+			],
+			[
+				"g",
+				"getOrder\tmethod"
+			],
+			[
+				"reord",
+				"reorderChange\tproperty"
+			],
+			[
+				"str",
+				"stringify"
+			],
+			[
+				"parse",
+				"parsedContents"
+			],
+			[
+				"entit",
+				"entityStore\tgetter"
+			],
+			[
+				"authori",
+				"authorized"
+			],
+			[
+				"assertDatabase",
+				"assertDatabaseHas"
+			],
+			[
+				"a",
+				"assign\tmethod"
+			],
+			[
+				"entity",
+				"entityActive\tproperty"
+			],
+			[
+				"dow",
+				"dowRecurrences\tproperty"
+			],
+			[
+				"cache",
+				"cachedData\tlet"
+			],
+			[
+				"reb",
+				"rebuildHabitDates\tmethod"
+			],
+			[
+				"rebuild",
+				"rebuildRoutineDates\tmethod"
+			],
+			[
+				"ent",
+				"entityStore\tgetter"
+			],
+			[
+				"entityDate",
+				"entityDateIndex\tproperty"
+			],
+			[
+				"update",
+				"updateTodaysActions\tmethod"
+			],
+			[
+				"nav",
+				"navStack\tparameter"
+			],
+			[
+				"clearI",
+				"clearInterval\tfunction"
+			],
+			[
+				"import",
+				"important"
+			],
+			[
+				"password",
+				"password-confirm"
+			],
+			[
+				"request",
+				"requestData"
+			],
+			[
+				"e",
+				"entity-date\tscript"
+			],
+			[
+				"Ent",
+				"EntityDate"
+			],
+			[
+				"co",
+				"compact"
+			],
+			[
+				"data",
+				"dataFilter"
+			],
+			[
+				"check",
+				"checklistUpdates\tmethod"
+			],
+			[
+				"checklist",
+				"checklistObserver\tproperty"
+			],
+			[
+				"per",
+				"percentages\tgetter"
+			],
+			[
+				"duration",
+				"durationToMinutes\tmethod"
+			],
+			[
+				"traini",
+				"trainingStore\tproperty"
+			],
+			[
+				"n",
+				"nowrap\twhite-space"
+			],
+			[
+				"add",
+				"addToSchedule\tmethod"
+			],
+			[
+				"prev",
+				"previousTime\tproperty"
+			],
+			[
+				"current",
+				"currentAuthorizations"
+			],
+			[
+				"auth",
+				"authorized"
+			],
+			[
+				"author",
+				"authorization"
+			],
+			[
+				"tar",
+				"targetNum\tlet"
+			],
+			[
+				"met",
+				"metric-log\tscript"
+			],
+			[
+				"sort_",
+				"sort_dir"
+			],
+			[
+				"vali",
+				"validatedData"
+			],
+			[
+				"val",
+				"validatedData"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"en",
+				"entity\tparameter"
+			],
+			[
+				"exp",
+				"expanded\tproperty"
+			],
+			[
+				"min",
+				"minutes\tvar"
+			],
+			[
+				"json_",
+				"json_encode"
+			],
+			[
+				"Cont",
+				"ContainerInterface"
+			],
+			[
+				"cont",
+				"contentDir"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"default",
+				"defaultTemplate"
+			],
+			[
+				"nex",
+				"nextInvoice"
+			],
+			[
+				"compan",
+				"companyId"
+			],
+			[
+				"templat",
+				"templatesDir"
+			],
+			[
+				"updateH",
+				"updateHabitIdsInner\tmethod"
+			],
+			[
+				"hab",
+				"habitObj\tlet"
+			],
+			[
+				"rout",
+				"routineEdit\tproperty"
+			],
+			[
+				"delete",
+				"deletefile"
+			],
+			[
+				"ques",
+				"questionIds"
+			],
+			[
+				"qu",
+				"questionIds"
+			],
+			[
+				"quest",
+				"questionCount"
+			],
+			[
+				"reque",
+				"requestData"
+			],
+			[
+				"act",
+				"activeChange\tproperty"
+			],
+			[
+				"Event",
+				"EventEmitter\talias"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/App/App.js",
+			"settings":
+			{
+				"buffer_size": 274,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 119.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/andrewshell/code/timetrack"
+	],
+	"file_history":
+	[
+		"/Users/andrewshell/code/timetrack/public/index.html",
+		"/Users/andrewshell/code/timetrack/src/index.js",
+		"/Users/andrewshell/code/timetrack/package.json",
+		"/Users/andrewshell/code/restcountries/package.json",
+		"/Users/andrewshell/code/learning/.env",
+		"/Users/andrewshell/Homestead/Homestead.yaml",
+		"/Users/andrewshell/code/MyAgsourceAPI/.gitignore",
+		"/Users/andrewshell/code/MyAgsourceAPI/phpdoc.dist.xml",
+		"/Users/andrewshell/code/MyAgsourceAPI/api/composer.json",
+		"/Users/andrewshell/brewlist.txt",
+		"/Users/andrewshell/code/stryv-portal/app/User.php",
+		"/Users/andrewshell/code/stryv-portal/app/Http/Controllers/Api/ValuesProfileController.php",
+		"/Users/andrewshell/code/stryv-portal/routes/api.php",
+		"/Users/andrewshell/code/stryv-portal/database/migrations/2018_09_14_191452_remove_user_id_from_authorizations.php",
+		"/Users/andrewshell/code/stryv-portal/database/migrations/2018_09_14_191244_copy_user_email_to_authorizations.php",
+		"/Users/andrewshell/code/stryv-portal/database/migrations/2018_09_14_191116_add_email_to_v_p_authorizations.php",
+		"/Users/andrewshell/code/stryv-portal/database/migrations/2018_09_14_191010_tweaking_v_p_authorizations.php",
+		"/Users/andrewshell/code/stryv-portal/routes/web.php",
+		"/Users/andrewshell/code/stryv-portal/app/Http/Controllers/ValuesProfileController.php",
+		"/Users/andrewshell/code/stryv-portal/resources/views/layouts/admin/leftnav.blade.php",
+		"/Users/andrewshell/code/assessments/config/auth.php",
+		"/Users/andrewshell/code/stryv-portal/resources/views/users/index.blade.php",
+		"/Users/andrewshell/code/stryv-portal/composer.json",
+		"/Users/andrewshell/code/stryv-portal/app/Providers/AuthServiceProvider.php",
+		"/Users/andrewshell/code/stryv-portal/config/auth.php",
+		"/Users/andrewshell/code/stryv-portal/app/Http/Controllers/Admin/UserController.php",
+		"/Users/andrewshell/code/stryv-portal/database/seeds/TagsSeeder.php",
+		"/Users/andrewshell/code/stryv-portal/app/Http/Controllers/CategoryController.php",
+		"/Users/andrewshell/code/stryv-portal/resources/views/values-profile/answer-create.blade.php",
+		"/Users/andrewshell/code/stryv-portal/database/seeds/tags.csv",
+		"/Users/andrewshell/code/life-lens/src/app/components/checkbox-row/checkbox-row.component.ts",
+		"/Users/andrewshell/code/life-lens/src/app/components/checkbox-row/checkbox-row.component.scss",
+		"/Users/andrewshell/code/life-lens/src/app/stores/entity.store.ts",
+		"/Users/andrewshell/code/life-lens/src/app/pages/lens/lens.page.ts",
+		"/Users/andrewshell/code/life-lens/src/app/pages/lens/lens.page.html",
+		"/Users/andrewshell/code/achievementlife/resources/views/content/home.blade.php",
+		"/Users/andrewshell/code/life-lens/src/app/pages/areas/areas.page.ts",
+		"/Users/andrewshell/code/life-lens/src/app/services/auth.service.ts",
+		"/Users/andrewshell/code/life-lens/src/app/services/init.service.ts",
+		"/Users/andrewshell/code/life-lens/src/app/services/entity.service.ts",
+		"/Users/andrewshell/code/life-lens/src/app/models/user.ts",
+		"/Users/andrewshell/code/life-lens/src/app/models/entity.ts",
+		"/Users/andrewshell/code/life-lens/src/app/pages/measures/measures.page.html",
+		"/Users/andrewshell/Downloads/PackExpo_Interactive_Mockup_V4/For Kevin/packexpo/README.md",
+		"/Users/andrewshell/Downloads/PackExpo_Interactive_Mockup_V4/For Kevin/packexpo/config/common.config.js",
+		"/Users/andrewshell/Downloads/PackExpo_Interactive_Mockup_V4/For Kevin/packexpo/src/css/_myriadpro.scss",
+		"/Users/andrewshell/code/life-lens/src/app/pages/measures/measures.page.ts",
+		"/Users/andrewshell/Downloads/PackExpo_Interactive_Mockup_V4/For Kevin/packexpo/src/css/app.scss",
+		"/Users/andrewshell/Downloads/PackExpo_Interactive_Mockup_V4/For Kevin/packexpo/src/index.html",
+		"/Users/andrewshell/Downloads/PackExpo_Interactive_Mockup_V4/For Kevin/packexpo/config/build.config.js",
+		"/Users/andrewshell/Downloads/PackExpo_Interactive_Mockup_V4/For Kevin/packexpo/package.json",
+		"/Users/andrewshell/Downloads/PackExpo_Interactive_Mockup_V4/For Kevin/packexpo/dist/css/app.css",
+		"/Users/andrewshell/Downloads/PackExpo_Interactive_Mockup_V4/PackExpo_Interactive_Mockup_V3 Report.txt",
+		"/Users/andrewshell/Downloads/PackExpo_Interactive_Mockup_V4/For Kevin/packexpo/src/fonts/_myriadpro.scss",
+		"/Users/andrewshell/Downloads/PackExpo_Interactive_Mockup_V4/For Kevin/index.html",
+		"/Users/andrewshell/Downloads/PackExpo_Interactive_Mockup_V4/For Kevin/style.scss",
+		"/Users/andrewshell/code/stryv-api/app/Http/Controllers/Api/UserController.php",
+		"/Users/andrewshell/code/life-lens/src/app/models/measure.ts",
+		"/Users/andrewshell/code/stryv-api/app/Http/Controllers/Api/EntitiesController.php",
+		"/Users/andrewshell/code/stryv-api/database/migrations/2018_08_21_185452_add_entity_rev.php",
+		"/Users/andrewshell/code/stryv-api/database/migrations/2018_09_11_175844_add_user_rev_fields.php",
+		"/Users/andrewshell/code/stryv-api/.env",
+		"/Users/andrewshell/code/monica/.env",
+		"/Users/andrewshell/code/countries-demo/src/components/App/App.js",
+		"/Users/andrewshell/code/restcountries/build/api.php",
+		"/Users/andrewshell/code/restcountries/public/api.php",
+		"/Users/andrewshell/code/restcountries/README.md",
+		"/Users/andrewshell/code/restcountries/src/components/Search/Search.js",
+		"/Users/andrewshell/code/restcountries/jest.config.json",
+		"/Users/andrewshell/code/restcountries/src/components/CountryList/CountryList.js",
+		"/Users/andrewshell/code/restcountries/src/components/MetaData/MetaData.js",
+		"/Users/andrewshell/code/restcountries/build/index.html",
+		"/Users/andrewshell/code/restcountries/composer.json",
+		"/Users/andrewshell/code/restcountries/cache/.gitignore",
+		"/Users/andrewshell/code/restcountries/public/index.html",
+		"/Users/andrewshell/code/restcountries/src/components/App/App.js",
+		"/Users/andrewshell/code/restcountries/.gitignore",
+		"/Users/andrewshell/code/restcountries/src/components/Search/Search.test.js",
+		"/Users/andrewshell/code/restcountries/src/InfoSec/Model/Country.php",
+		"/Users/andrewshell/code/restcountries/src/InfoSec/Api/RestCountriesApi.php",
+		"/Users/andrewshell/code/restcountries/src/InfoSec/SearchApp.php",
+		"/Users/andrewshell/code/restcountries/src/components/CompanyList/CountryList.js",
+		"/Users/andrewshell/code/restcountries/src/setupTests.js",
+		"/Users/andrewshell/code/restcountries/tests/InfoSec/Api/RestCountriesApiTest.php",
+		"/Users/andrewshell/code/restcountries/src/InfoSec/Model/Region.php",
+		"/Users/andrewshell/code/restcountries/src/InfoSec/Model/MetaData.php",
+		"/Users/andrewshell/code/restcountries/tests/InfoSec/Api/AggregateRegionsTest.php",
+		"/Users/andrewshell/code/restcountries/src/components/ErrorMessage/ErrorMessage.js",
+		"/Users/andrewshell/code/restcountries/src/InfoSec/Api/FilteredApi.php",
+		"/Users/andrewshell/code/restcountries/src/InfoSec/Api/AggregateRegions.php",
+		"/Users/andrewshell/code/restcountries/src/InfoSec/Model/SubRegion.php",
+		"/Users/andrewshell/code/restcountries/tests/InfoSec/Api/SortedApiTest.php",
+		"/Users/andrewshell/code/restcountries/tests/InfoSec/Api/FilteredApiTest.php",
+		"/Users/andrewshell/code/restcountries/tests/InfoSec/Api/CachedApiTest.php",
+		"/Users/andrewshell/code/restcountries/tests/InfoSec/Api/LimitedApiTest.php",
+		"/Users/andrewshell/code/restcountries/config/search.app.php",
+		"/Users/andrewshell/code/restcountries/src/InfoSec/Api/CountrySource.php",
+		"/Users/andrewshell/code/restcountries/tests/InfoSec/Api/example.json",
+		"/Users/andrewshell/code/restcountries/src/InfoSec/Api/ApiException.php",
+		"/Users/andrewshell/code/restcountries/src/InfoSec/Api/SortedApi.php",
+		"/Users/andrewshell/code/restcountries/src/InfoSec/Api/LimitedApi.php",
+		"/Users/andrewshell/code/restcountries/src/InfoSec/Api/CachedApi.php",
+		"/Users/andrewshell/code/restcountries/src/InfoSec/Companies.php",
+		"/Users/andrewshell/code/restcountries/build/router.php",
+		"/Users/andrewshell/code/restcountries/public/router.php",
+		"/Users/andrewshell/code/restcountries/router.php",
+		"/Users/andrewshell/code/restcountries/src/components/ErrorMessage/ErrorMessage.test.js",
+		"/Users/andrewshell/code/restcountries/src/components/App/App.test.js",
+		"/Users/andrewshell/code/restcountries/src/index.js",
+		"/Users/andrewshell/code/restcountries/restcountries.sublime-project",
+		"/Users/andrewshell/code/restcountries/src/App.js",
+		"/Users/andrewshell/code/life-lens/src/app/pages/measures/measures.page.scss",
+		"/Users/andrewshell/code/life-lens/src/app/pages/measures/measures.module.ts",
+		"/Users/andrewshell/code/stryverscom/wp-content/themes/boss-child/partials/content-product.php",
+		"/Users/andrewshell/code/life-lens/src/app/components/goal-progress/goal-progress.component.ts",
+		"/Users/andrewshell/code/life-lens/src/app/components/goal-progress/goal-progress.component.scss",
+		"/Users/andrewshell/code/resume/public/test.php",
+		"/Users/andrewshell/code/life-lens/src/app/components/goal-progress/goal-progress.component.html",
+		"/Users/andrewshell/code/life-lens/src/app/components/components.module.ts",
+		"/Users/andrewshell/code/stryverscom/wp-content/plugins/memberpress/app/controllers/MeprProductsCtrl.php",
+		"/Users/andrewshell/code/stryverscom/wp-content/themes/boss-child/templates/template-memberpress-product.php",
+		"/Users/andrewshell/code/stryverscom/wp-content/plugins/stryvers-custom/stryvers-custom.php",
+		"/Users/andrewshell/Downloads/wp_stryvers.sql",
+		"/Users/andrewshell/Downloads/Andrew Shell Coding Challenge/your-solution.js",
+		"/Users/andrewshell/Downloads/Andrew Shell Coding Challenge/package.json",
+		"/Users/andrewshell/Downloads/Andrew Shell Coding Challenge/src/output-file.js",
+		"/Users/andrewshell/Downloads/Andrew Shell Coding Challenge/output.csv",
+		"/Users/andrewshell/Downloads/Andrew Shell Coding Challenge/healthy-minds-description.json"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/App/App.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 108.0
+	},
+	"pinned_build_system": "",
+	"project": "timetrack.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 242.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
