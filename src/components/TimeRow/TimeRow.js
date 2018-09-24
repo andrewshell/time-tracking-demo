@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import FormattedDuration from '../FormattedDuration/FormattedDuration';
 import FormattedTime from '../FormattedTime/FormattedTime';
-import './TimeRow.css';
+import styles from './TimeRow.module.scss';
 
 class TimeRow extends Component {
 
@@ -20,15 +20,15 @@ class TimeRow extends Component {
 
   render() {
     return (
-      <div className="TimeRow">
-        <div className="duration">
+      <div className={ styles.TimeRow }>
+        <div className={ styles.duration }>
           <FormattedDuration duration={ this.props.time.duration }></FormattedDuration>
         </div>
-        <div className="recordedTime">
+        <div className={ styles.recordedTime }>
           <FormattedTime time={ this.props.time.recordedTime }></FormattedTime>
         </div>
         <button
-          className="deleteButton"
+          className={ styles.deleteButton }
           onClick={ this.deleteTime }
         >Delete</button>
       </div>

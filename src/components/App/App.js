@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import EntryForm from '../EntryForm/EntryForm';
 import TaskRow from '../TaskRow/TaskRow';
-import './App.css';
+import styles from './App.module.scss';
 import * as moment from 'moment';
 
 class App extends Component {
@@ -133,16 +133,16 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div className="taskHeader">
+      <div className={ styles.App }>
+        <div className={ styles.taskHeader }>
           <EntryForm
             recordTimeEntry={ this.recordTimeEntry }
           ></EntryForm>
         </div>
-        <div className={ 0 === this.state.recordedTimes.length ? 'emptyState' : 'hidden' }>
+        <div className={ 0 === this.state.recordedTimes.length ? styles.emptyState : styles.hidden }>
           There are no recorded tasks.
         </div>
-        <div className={ 0 === this.state.recordedTimes.length ? 'hidden' : 'taskBody' }>
+        <div className={ 0 === this.state.recordedTimes.length ? styles.hidden : styles.taskBody }>
           {this.recordedTasks().map((task, i) => {
             return (
               <TaskRow

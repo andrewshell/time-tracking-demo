@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import * as moment from 'moment';
-import './TimeEntry.css';
+import styles from './TimeEntry.module.scss';
 
 class TimeEntry extends Component {
 
@@ -101,7 +101,7 @@ class TimeEntry extends Component {
 
   render() {
     return (
-      <div className="TimeEntry"><div className="inner">
+      <div className={ styles.TimeEntry }><div className={ styles.inner }>
         <input
           type="text"
           value={ this.state.currentTime }

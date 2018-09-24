@@ -1,0 +1,13 @@
+.TimeEntry {
+  flex: 0 0 6.5em;
+
+  .inner {
+    display: flex;
+    align-items: center;
+  }
+
+  input {
+    text-align: center;
+    width: 100%;
+  }
+}

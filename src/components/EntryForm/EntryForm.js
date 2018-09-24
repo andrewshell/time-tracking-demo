@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import TimeEntry from '../TimeEntry/TimeEntry';
-import './EntryForm.css';
+import styles from './EntryForm.module.scss';
 
 class EntryForm extends Component {
   state = {
@@ -50,21 +50,21 @@ class EntryForm extends Component {
 
   render() {
     return (
-      <form className="EntryForm" onSubmit={ this.recordTimeEntry }>
+      <form className={ styles.EntryForm } onSubmit={ this.recordTimeEntry }>
         <TimeEntry
           ref={ this.timeEntryRef }
           updateTime={ this.updateTime }
         ></TimeEntry>
         <input
           type="text"
-          className="taskName"
+          className={ styles.taskName }
           placeholder="What are you working on?"
           value={ this.state.taskName }
           onChange={ this.updateTaskName }
         />
         <button
           type="submit"
-          className="startButton"
+          className={ styles.startButton }
         >Start</button>
       </form>
     )

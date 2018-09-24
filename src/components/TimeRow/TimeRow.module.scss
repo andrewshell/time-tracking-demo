@@ -1,22 +1,22 @@
 .TimeRow {
-    border-bottom: 1px solid #E8E8E8;
-    display: flex;
-    justify-content: space-between;
-    opacity: 0.8;
-    padding: 0.5em 1em;
-}
+  border-bottom: 1px solid #E8E8E8;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8;
+  padding: 0.5em 1em;
 
-.TimeRow .duration {
+  .duration {
     flex: 0 0 4.5em;
+    margin-right: 1.5em;
     text-align: right;
-}
+  }
 
-.TimeRow .recordedTime {
+  .recordedTime {
     flex: 1 1;
     margin-left: 0.2em;
-}
+  }
 
-.TimeRow .deleteButton {
+  .deleteButton {
     background: transparent;
     border: none;
     color: #B00020;
@@ -25,13 +25,16 @@
     font-size: 14px;
     outline: none;
     visibility: hidden;
-}
+  }
 
-.TimeRow .deleteButton:hover {
+  .deleteButton:hover {
     background: #B00020;
     color: #fff;
-}
+  }
 
-.TimeRow:hover .deleteButton {
-    visibility: visible;
+  &:hover {
+    .deleteButton {
+      visibility: visible;
+    }
+  }
 }

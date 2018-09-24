@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import FormattedDuration from '../FormattedDuration/FormattedDuration';
 import TimeRow from '../TimeRow/TimeRow';
-import './TaskRow.css';
+import styles from './TaskRow.module.scss';
 
 class TaskRow extends Component {
   state = {
@@ -45,19 +45,19 @@ class TaskRow extends Component {
 
   render() {
     return (
-      <div className="TaskRow">
-        <div className="summary">
-          <div className="leftMargin">
+      <div className={ styles.TaskRow }>
+        <div className={ styles.summary }>
+          <div className={ styles.leftMargin }>
             <ion-icon name={ this.arrowIcon } onClick={ this.toggleDetails }></ion-icon>
-            <div className="duration">
+            <div className={ styles.duration }>
               <FormattedDuration duration={ this.props.task.duration }></FormattedDuration>
             </div>
           </div>
-          <div className="taskName">
+          <div className={ styles.taskName }>
             { this.props.task.taskName }
           </div>
           <button
-            className="continueButton"
+            className={ styles.continueButton }
             onClick={ this.continueTask }
           >Continue</button>
         </div>

@@ -1,28 +1,28 @@
 .EntryForm {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 
-.EntryForm input[type=text] {
+  input[type=text] {
     background-color: transparent;
     border: none;
     box-shadow: none;
     height: 22px;
     outline: none;
     padding: 3px 5px;
-}
+  }
 
-.EntryForm .taskName {
+  .taskName {
     margin: 0 0.2em;
     width: 100%;
-}
+  }
 
-.EntryForm .startButton {
+  .startButton {
     background: #03DAC6;
     border: 1px solid #03DAC6;
     color: #fff;
     cursor: pointer;
     outline: none;
+  }
 }
