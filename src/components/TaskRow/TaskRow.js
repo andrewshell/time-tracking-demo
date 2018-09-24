@@ -61,7 +61,7 @@ class TaskRow extends Component {
             onClick={ this.continueTask }
           >Continue</button>
         </div>
-        <div className={ this.state.expanded ? 'details' : 'hidden' }>
+        <div className={ this.state.expanded ? styles.details : styles.hidden }>
         {this.props.task.timeEntries.map((time, i) => {
           return (
             <TimeRow
