@@ -11,7 +11,7 @@ class FormattedTime extends Component {
 }
 
 FormattedTime.propTypes = {
-    time: PropTypes.string
+    time: PropTypes.string.isRequired
 }
 
 export default FormattedTime;

@@ -13,9 +13,7 @@ class TimeRow extends Component {
   }
 
   deleteTime() {
-    if ('function' === typeof this.props.deleteTime) {
-      this.props.deleteTime(this.props.time);
-    }
+    this.props.deleteTime(this.props.time);
   }
 
   render() {
@@ -37,8 +35,8 @@ class TimeRow extends Component {
 }
 
 TimeRow.propTypes = {
-  time: PropTypes.object,
-  deleteTime: PropTypes.func
+  time: PropTypes.object.isRequired,
+  deleteTime: PropTypes.func.isRequired
 }
 
 export default TimeRow;

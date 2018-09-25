@@ -9,26 +9,9 @@ body, input, button {
 }
 
 .App {
-  .taskHeader {
-    background-color: #fff;
-    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.1);
-    height: 2em;
-    padding: 0.5em 1em;
-    margin-bottom: 1em;
-  }
-
-  .emptyState {
-    text-align: center;
-    margin: 2em 0;
-    opacity: 0.5;
-  }
-
   .taskBody {
     box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.1);
     border-top: 1px solid #F3F3F3;
-  }
-
-  .hidden {
-    display: none;
+    margin-top: 64px;
   }
 }

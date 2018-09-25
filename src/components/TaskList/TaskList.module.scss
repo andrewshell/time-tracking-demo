@@ -1,0 +1,12 @@
+.TaskList {
+  .emptyState {
+    background-color: #fff;
+    opacity: 0.5;
+    padding: 0.5em 1em;
+    text-align: center;
+  }
+
+  .hidden {
+    display: none;
+  }
+}

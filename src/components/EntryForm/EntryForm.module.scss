@@ -1,16 +1,39 @@
 .EntryForm {
   align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.1);
   display: flex;
+  height: 2em;
   justify-content: space-between;
-  width: 100%;
+  padding: 0.5em 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 
-  input[type=text] {
+  input {
     background-color: transparent;
     border: none;
     box-shadow: none;
     height: 22px;
     outline: none;
     padding: 3px 5px;
+  }
+
+  .recordedTime {
+    align-items: center;
+    display: flex;
+    flex: 0 0 6.5em;
+
+    & > input {
+      text-align: center;
+      width: 100%;
+    }
+
+    ion-icon {
+      width: 32px;
+    }
   }
 
   .taskName {

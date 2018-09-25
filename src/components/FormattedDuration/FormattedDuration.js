@@ -12,7 +12,7 @@ class FormattedDuration extends Component {
 }
 
 FormattedDuration.propTypes = {
-    duration: PropTypes.number
+    duration: PropTypes.number.isRequired
 }
 
 export default FormattedDuration;

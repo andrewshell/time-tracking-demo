@@ -32,15 +32,11 @@ class TaskRow extends Component {
   }
 
   continueTask() {
-    if ('function' === typeof this.props.continueTask) {
-      this.props.continueTask(this.props.task);
-    }
+    this.props.continueTask(this.props.task);
   }
 
   deleteTime(time) {
-    if ('function' === typeof this.props.deleteTime) {
-      this.props.deleteTime(time);
-    }
+    this.props.deleteTime(time);
   }
 
   render() {
@@ -65,7 +61,7 @@ class TaskRow extends Component {
         {this.props.task.timeEntries.map((time, i) => {
           return (
             <TimeRow
-              key={ 'timeRow' + i }
+              key={ time.recordedTime }
               time={ time }
               deleteTime={ this.deleteTime }
             ></TimeRow>
@@ -78,9 +74,9 @@ class TaskRow extends Component {
 }
 
 TaskRow.propTypes = {
-    task: PropTypes.object,
-    continueTask: PropTypes.func,
-    deleteTime: PropTypes.func
+  task: PropTypes.object.isRequired,
+  continueTask: PropTypes.func.isRequired,
+  deleteTime: PropTypes.func.isRequired
 }
 
 export default TaskRow;

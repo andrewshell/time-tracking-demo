@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import TimeEntry from '../TimeEntry/TimeEntry';
 import styles from './EntryForm.module.scss';
 
 class EntryForm extends Component {
   state = {
+    editMode: false,
     recordedTime: '',
     taskName: ''
   };
@@ -12,11 +12,70 @@ class EntryForm extends Component {
   constructor(props) {
     super(props);
 
+    this.state.recordedTime = this.props.currentTime.format('h:mm a');
+
+    this.enterEditMode = this.enterEditMode.bind(this);
+    this.handleChangeTime = this.handleChangeTime.bind(this);
     this.recordTimeEntry = this.recordTimeEntry.bind(this);
+    this.resetForm = this.resetForm.bind(this);
     this.updateTime = this.updateTime.bind(this);
     this.updateTaskName = this.updateTaskName.bind(this);
 
     this.timeEntryRef = React.createRef();
+  }
+
+  get timeIcon() {
+    if (this.state.editMode) {
+      return 'md-close-circle-outline';
+    }
+
+    return 'md-time';
+  }
+
+  get timeValue() {
+    if (this.state.editMode) {
+      return this.state.recordedTime;
+    }
+
+    return this.props.currentTime.format('h:mm a');
+  }
+
+  enterEditMode() {
+    this.setState({
+      editMode: true,
+      recordedTime: this.props.currentTime.format('h:mm a')
+    });
+  }
+
+  formatRecordedTime(currentTime) {
+    currentTime = currentTime.trim().toLowerCase();
+
+    const rxTime = /(\d+):(\d+)\s*(am|pm)?/;
+    const timeParts = currentTime.match(rxTime);
+
+    if (null === timeParts) {
+      return null;
+    }
+
+    if (undefined !== timeParts[3]) {
+      if (timeParts[1] === '12') {
+        timeParts[1] = '0';
+      }
+
+      if (timeParts[3] === 'pm') {
+        timeParts[1] = (parseInt(timeParts[1], 10) + 12).toString();
+      }
+    }
+
+    currentTime = timeParts[1].padStart(2, '0') + ':' + timeParts[2].padStart(2, '0');
+
+    return currentTime;
+  }
+
+  handleChangeTime(event) {
+    this.setState({
+      recordedTime: event.target.value
+    });
   }
 
   updateTime(recordedTime) {
@@ -34,16 +93,22 @@ class EntryForm extends Component {
   recordTimeEntry(event) {
     event.preventDefault();
 
-    if ('function' === typeof this.props.recordTimeEntry) {
-      let timeEntry = Object.assign({}, this.state);
-      timeEntry.taskName = timeEntry.taskName.trim();
-      if (0 < timeEntry.taskName.length) {
-        this.props.recordTimeEntry(timeEntry);
-      }
+    let timeEntry = {
+      recordedTime: this.formatRecordedTime(this.state.recordedTime),
+      taskName: this.state.taskName.trim()
+    };
+
+    if (0 < timeEntry.taskName.length && null !== timeEntry.recordedTime) {
+      this.props.recordTimeEntry(timeEntry);
     }
 
-    this.timeEntryRef.current.resetForm();
+    this.resetForm();
+  }
+
+  resetForm() {
     this.setState({
+      editMode: false,
+      recordedTime: this.props.currentTime.format('h:mm a'),
       taskName: ''
     });
   }
@@ -51,10 +116,15 @@ class EntryForm extends Component {
   render() {
     return (
       <form className={ styles.EntryForm } onSubmit={ this.recordTimeEntry }>
-        <TimeEntry
-          ref={ this.timeEntryRef }
-          updateTime={ this.updateTime }
-        ></TimeEntry>
+        <div className={ styles.recordedTime }>
+          <input
+            type="text"
+            value={ this.timeValue }
+            onChange={ this.handleChangeTime }
+            onFocus={ this.enterEditMode }
+          />
+          <ion-icon name={ this.timeIcon } size="large" onClick={ this.resetForm }></ion-icon>
+        </div>
         <input
           type="text"
           className={ styles.taskName }
@@ -71,8 +141,9 @@ class EntryForm extends Component {
   }
 }
 
-TimeEntry.propTypes = {
-  recordTimeEntry: PropTypes.func
+EntryForm.propTypes = {
+  currentTime: PropTypes.object.isRequired,
+  recordTimeEntry: PropTypes.func.isRequired
 }
 
 export default EntryForm;
