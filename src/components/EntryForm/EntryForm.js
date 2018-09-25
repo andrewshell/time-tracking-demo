@@ -26,10 +26,10 @@ class EntryForm extends Component {
 
   get timeIcon() {
     if (this.state.editMode) {
-      return 'md-close-circle-outline';
+      return 'img/md-close-circle-outline.svg';
     }
 
-    return 'md-time';
+    return 'img/md-time.svg';
   }
 
   get timeValue() {
@@ -116,15 +116,14 @@ class EntryForm extends Component {
   render() {
     return (
       <form className={ styles.EntryForm } onSubmit={ this.recordTimeEntry }>
-        <div className={ styles.recordedTime }>
-          <input
-            type="text"
-            value={ this.timeValue }
-            onChange={ this.handleChangeTime }
-            onFocus={ this.enterEditMode }
-          />
-          <ion-icon name={ this.timeIcon } size="large" onClick={ this.resetForm }></ion-icon>
-        </div>
+        <img src={ this.timeIcon } alt="Reset" onClick={ this.resetForm } />
+        <input
+          type="text"
+          className={ styles.recordedTime }
+          value={ this.timeValue }
+          onChange={ this.handleChangeTime }
+          onFocus={ this.enterEditMode }
+        />
         <input
           type="text"
           className={ styles.taskName }

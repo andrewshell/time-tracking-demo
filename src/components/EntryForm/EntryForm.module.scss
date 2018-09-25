@@ -12,33 +12,32 @@
   right: 0;
   z-index: 10;
 
+  img {
+    cursor: pointer;
+    display: block;
+    flex: 0 0 1.5em;
+    width: 1.5em;
+  }
+
   input {
     background-color: transparent;
     border: none;
     box-shadow: none;
+    display: block;
     height: 22px;
     outline: none;
-    padding: 3px 5px;
   }
 
   .recordedTime {
-    align-items: center;
-    display: flex;
-    flex: 0 0 6.5em;
-
-    & > input {
-      text-align: center;
-      width: 100%;
-    }
-
-    ion-icon {
-      width: 32px;
-    }
+    flex: 0 0 5em;
+    margin-right: 1.5em;
+    text-align: right;
+    width: 5em;
   }
 
   .taskName {
+    flex: 1 1;
     margin: 0 0.2em;
-    width: 100%;
   }
 
   .startButton {
@@ -46,6 +45,7 @@
     border: 1px solid #03DAC6;
     color: #fff;
     cursor: pointer;
+    flex: 0 0;
     outline: none;
   }
 }

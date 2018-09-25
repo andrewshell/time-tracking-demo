@@ -19,10 +19,10 @@ class TaskRow extends Component {
 
   get arrowIcon() {
     if (this.state.expanded) {
-      return 'arrow-dropdown';
+      return 'img/md-arrow-dropdown.svg';
     }
 
-    return 'arrow-dropright';
+    return 'img/md-arrow-dropright.svg';
   }
 
   toggleDetails() {
@@ -43,11 +43,9 @@ class TaskRow extends Component {
     return (
       <div className={ styles.TaskRow }>
         <div className={ styles.summary }>
-          <div className={ styles.leftMargin }>
-            <ion-icon name={ this.arrowIcon } onClick={ this.toggleDetails }></ion-icon>
-            <div className={ styles.duration }>
-              <FormattedDuration duration={ this.props.task.duration }></FormattedDuration>
-            </div>
+          <img src={ this.arrowIcon } alt="Toggle Row" onClick={ this.toggleDetails } />
+          <div className={ styles.duration }>
+            <FormattedDuration duration={ this.props.task.duration }></FormattedDuration>
           </div>
           <div className={ styles.taskName }>
             { this.props.task.taskName }

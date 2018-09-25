@@ -6,14 +6,14 @@
   padding: 0.5em 1em;
 
   .duration {
-    flex: 0 0 4.5em;
+    flex: 0 0 6.5em;
     margin-right: 1.5em;
     text-align: right;
   }
 
   .recordedTime {
     flex: 1 1;
-    margin-left: 0.2em;
+    margin: 0 0.2em;
   }
 
   .deleteButton {
@@ -22,7 +22,6 @@
     color: #B00020;
     cursor: pointer;
     flex: 0 0;
-    font-size: 14px;
     outline: none;
     visibility: hidden;
   }
