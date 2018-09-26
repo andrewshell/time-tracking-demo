@@ -1,51 +1,72 @@
 .EntryForm {
-  align-items: center;
+  align-items: stretch;
   background-color: #fff;
   box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.1);
   display: flex;
-  height: 2em;
   justify-content: space-between;
+  left: 0;
   padding: 0.5em 1em;
   position: fixed;
-  top: 0;
-  left: 0;
   right: 0;
-  z-index: 10;
-
-  img {
-    cursor: pointer;
-    display: block;
-    flex: 0 0 1.5em;
-    width: 1.5em;
-  }
+  top: 0;
 
   input {
     background-color: transparent;
     border: none;
     box-shadow: none;
     display: block;
-    height: 22px;
-    outline: none;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+
+    &[placeholder] {
+      text-overflow: ellipsis;
+    }
+  }
+
+  .resetButton {
+    flex: 0 0 1.5em;
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      height: 100%;
+      padding: 0;
+      width: 100%;
+
+      img {
+        width: 1.5em;
+        vertical-align: middle;
+      }
+    }
   }
 
   .recordedTime {
-    flex: 0 0 5em;
-    margin-right: 1.5em;
-    text-align: right;
-    width: 5em;
+    flex: 0 0 4.5em;
+    padding-right: 1em;
+
+    input {
+      text-align: right;
+    }
   }
 
   .taskName {
     flex: 1 1;
-    margin: 0 0.2em;
   }
 
   .startButton {
-    background: #03DAC6;
-    border: 1px solid #03DAC6;
-    color: #fff;
-    cursor: pointer;
     flex: 0 0;
-    outline: none;
+    padding-left: 0.5em;
+
+    button {
+      background: #03DAC6;
+      border: 1px solid #03DAC6;
+      color: #fff;
+      cursor: pointer;
+      height: 100%;
+      width: 100%;
+    }
   }
 }

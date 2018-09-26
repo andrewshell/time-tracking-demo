@@ -116,25 +116,30 @@ class EntryForm extends Component {
   render() {
     return (
       <form className={ styles.EntryForm } onSubmit={ this.recordTimeEntry }>
-        <img src={ this.timeIcon } alt="Reset" onClick={ this.resetForm } />
-        <input
-          type="text"
-          className={ styles.recordedTime }
-          value={ this.timeValue }
-          onChange={ this.handleChangeTime }
-          onFocus={ this.enterEditMode }
-        />
-        <input
-          type="text"
-          className={ styles.taskName }
-          placeholder="What are you working on?"
-          value={ this.state.taskName }
-          onChange={ this.updateTaskName }
-        />
-        <button
-          type="submit"
-          className={ styles.startButton }
-        >Start</button>
+        <div className={ styles.resetButton }>
+          <button type="button" onClick={ this.resetForm }>
+            <img src={ this.timeIcon } alt="Reset" />
+          </button>
+        </div>
+        <div className={ styles.recordedTime }>
+          <input
+            type="text"
+            value={ this.timeValue }
+            onChange={ this.handleChangeTime }
+            onFocus={ this.enterEditMode }
+          />
+        </div>
+        <div className={ styles.taskName }>
+          <input
+            type="text"
+            placeholder="What are you working on?"
+            value={ this.state.taskName }
+            onChange={ this.updateTaskName }
+          />
+        </div>
+        <div className={ styles.startButton }>
+          <button type="submit">Start</button>
+        </div>
       </form>
     )
   }

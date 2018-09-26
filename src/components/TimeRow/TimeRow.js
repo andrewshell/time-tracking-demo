@@ -25,10 +25,9 @@ class TimeRow extends Component {
         <div className={ styles.recordedTime }>
           <FormattedTime time={ this.props.time.recordedTime }></FormattedTime>
         </div>
-        <button
-          className={ styles.deleteButton }
-          onClick={ this.deleteTime }
-        >Delete</button>
+        <div className={ styles.deleteButton }>
+          <button type="button" onClick={ this.deleteTime }>Delete</button>
+        </div>
       </div>
     )
   }

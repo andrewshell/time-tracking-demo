@@ -6,33 +6,37 @@
   padding: 0.5em 1em;
 
   .duration {
-    flex: 0 0 6.5em;
-    margin-right: 1.5em;
+    flex: 0 0 6em;
+    padding-right: 1em;
     text-align: right;
   }
 
   .recordedTime {
     flex: 1 1;
-    margin: 0 0.2em;
   }
 
   .deleteButton {
-    background: transparent;
-    border: none;
-    color: #B00020;
-    cursor: pointer;
     flex: 0 0;
-    outline: none;
-    visibility: hidden;
-  }
+    padding-left: 0.5em;
 
-  .deleteButton:hover {
-    background: #B00020;
-    color: #fff;
+    button {
+      background: transparent;
+      border: none;
+      color: #B00020;
+      cursor: pointer;
+      flex: 0 0;
+      outline: none;
+      visibility: hidden;
+    }
+
+    button:hover {
+      background: #B00020;
+      color: #fff;
+    }
   }
 
   &:hover {
-    .deleteButton {
+    button {
       visibility: visible;
     }
   }

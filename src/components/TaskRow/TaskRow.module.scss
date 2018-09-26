@@ -3,48 +3,64 @@
   flex-direction: column;
 
   .summary {
-    align-items: center;
+    align-items: stretch;
     background-color: #fff;
     border-bottom: 1px solid #E8E8E8;
     display: flex;
     justify-content: space-between;
     padding: 0.5em 1em;
 
-    img {
-      cursor: pointer;
-      display: block;
+    .toggleButton {
       flex: 0 0 1.5em;
-      width: 1.5em;
+
+      button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        height: 100%;
+        padding: 0;
+        width: 100%;
+
+        img {
+          width: 1.5em;
+          vertical-align: middle;
+        }
+      }
     }
 
     .duration {
-      flex: 0 0 5em;
-      margin-right: 1.5em;
+      flex: 0 0 4.5em;
+      padding-right: 1em;
       text-align: right;
     }
 
     .taskName {
       flex: 1 1;
-      margin: 0 0.2em;
     }
 
     .continueButton {
-      background: transparent;
-      border: none;
-      color: #03DAC6;
-      cursor: pointer;
       flex: 0 0;
-      outline: none;
-      visibility: hidden;
-    }
+      padding-left: 0.5em;
 
-    .continueButton:hover {
-      background: #03DAC6;
-      color: #fff;
+      button {
+        background: transparent;
+        border: none;
+        color: #03DAC6;
+        cursor: pointer;
+        flex: 0 0;
+        height: 100%;
+        visibility: hidden;
+        width: 100%;
+      }
+
+      button:hover {
+        background: #03DAC6;
+        color: #fff;
+      }
     }
 
     &:hover {
-      .continueButton {
+      button {
         visibility: visible;
       }
     }

@@ -43,17 +43,20 @@ class TaskRow extends Component {
     return (
       <div className={ styles.TaskRow }>
         <div className={ styles.summary }>
-          <img src={ this.arrowIcon } alt="Toggle Row" onClick={ this.toggleDetails } />
+          <div className={ styles.toggleButton }>
+            <button type="button" onClick={ this.toggleDetails }>
+              <img src={ this.arrowIcon } alt="Toggle" />
+            </button>
+          </div>
           <div className={ styles.duration }>
             <FormattedDuration duration={ this.props.task.duration }></FormattedDuration>
           </div>
           <div className={ styles.taskName }>
             { this.props.task.taskName }
           </div>
-          <button
-            className={ styles.continueButton }
-            onClick={ this.continueTask }
-          >Continue</button>
+          <div className={ styles.continueButton }>
+            <button type="button" onClick={ this.continueTask }>Continue</button>
+          </div>
         </div>
         <div className={ this.state.expanded ? styles.details : styles.hidden }>
         {this.props.task.timeEntries.map((time, i) => {
