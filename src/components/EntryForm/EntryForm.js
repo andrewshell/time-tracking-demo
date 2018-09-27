@@ -137,8 +137,8 @@ class EntryForm extends Component {
             onChange={ this.updateTaskName }
           />
         </div>
-        <div className={ styles.startButton }>
-          <button type="submit">Start</button>
+        <div>
+          <button className="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded" type="submit">Start</button>
         </div>
       </form>
     )

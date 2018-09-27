@@ -23,11 +23,12 @@
     "redux": "^4.0.0"
   },
   "scripts": {
-    "start": "react-app-rewired start",
+    "start": "npm run tailwind:css && react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom",
     "eject": "react-app-rewired eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "tailwind:css": "./node_modules/.bin/tailwind build src/components/App/tailwind.src.css -c tailwind.js -o src/components/App/tailwind.css"
   }
 }
