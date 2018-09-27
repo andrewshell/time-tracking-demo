@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import EntryFormContainer from '../../containers/EntryFormContainer';
 import TaskListContainer from '../../containers/TaskListContainer';
 // import styles from './App.module.scss';
+import './tailwind.css';
 import styles from './App.module.css';
 
 class App extends Component {
