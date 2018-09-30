@@ -3,12 +3,12 @@
   flex-direction: column;
 
   .summary {
-    align-items: stretch;
+    align-items: center;
     background-color: #fff;
     border-bottom: 1px solid #E8E8E8;
     display: flex;
     justify-content: space-between;
-    padding: 0.5em 1em;
+    padding: 0 0 0 1em;
 
     .toggleButton {
       flex: 0 0 1.5em;
@@ -18,7 +18,7 @@
         border: none;
         cursor: pointer;
         height: 100%;
-        padding: 0;
+        padding: 0.5em 0;
         width: 100%;
 
         img {
@@ -45,16 +45,17 @@
       button {
         background: transparent;
         border: none;
-        color: #03DAC6;
+        color: #00aba9;
         cursor: pointer;
         flex: 0 0;
         height: 100%;
+        padding: 0.7em 1em;
         visibility: hidden;
         width: 100%;
       }
 
       button:hover {
-        background: #03DAC6;
+        background: #00aba9;
         color: #fff;
       }
     }

@@ -1,9 +1,10 @@
 .TimeRow {
+  align-items: center;
   border-bottom: 1px solid #E8E8E8;
   display: flex;
   justify-content: space-between;
   opacity: 0.8;
-  padding: 0.5em 1em;
+  padding: 0 0 0 1em;
 
   .duration {
     flex: 0 0 6em;
@@ -22,15 +23,16 @@
     button {
       background: transparent;
       border: none;
-      color: #B00020;
+      color: #b91d47;
       cursor: pointer;
       flex: 0 0;
       outline: none;
+      padding: 0.7em 1em;
       visibility: hidden;
     }
 
     button:hover {
-      background: #B00020;
+      background: #b91d47;
       color: #fff;
     }
   }

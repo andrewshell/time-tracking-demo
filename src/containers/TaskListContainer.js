@@ -19,9 +19,8 @@ const recordedTasks = (state) => {
       };
     }
 
-    taskIndex[timeEntry.taskName].recordedTime = timeEntry.recordedTime;
     taskIndex[timeEntry.taskName].duration += timeEntry.duration;
-    taskIndex[timeEntry.taskName].timeEntries.unshift(timeEntry);
+    taskIndex[timeEntry.taskName].timeEntries.push(timeEntry);
 
     return taskIndex;
   }, {});

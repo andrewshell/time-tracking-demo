@@ -23,7 +23,6 @@ const tasks = (state = [], action) => {
       return [
         ...newState,
         {
-          id: action.id,
           recordedTime: action.recordedTime,
           taskName: action.taskName
         }
