@@ -1,6 +1,22 @@
 {
-  "main.css": "static/css/main.20a92e8b.css",
-  "main.css.map": "static/css/main.20a92e8b.css.map",
-  "main.js": "static/js/main.43656495.js",
-  "main.js.map": "static/js/main.43656495.js.map"
+  "files": {
+    "main.css": "/time-tracking-demo/static/css/main.3fa08c2a.chunk.css",
+    "main.js": "/time-tracking-demo/static/js/main.9263c542.chunk.js",
+    "main.js.map": "/time-tracking-demo/static/js/main.9263c542.chunk.js.map",
+    "runtime-main.js": "/time-tracking-demo/static/js/runtime-main.c052417f.js",
+    "runtime-main.js.map": "/time-tracking-demo/static/js/runtime-main.c052417f.js.map",
+    "static/js/2.36b7aa5c.chunk.js": "/time-tracking-demo/static/js/2.36b7aa5c.chunk.js",
+    "static/js/2.36b7aa5c.chunk.js.map": "/time-tracking-demo/static/js/2.36b7aa5c.chunk.js.map",
+    "index.html": "/time-tracking-demo/index.html",
+    "precache-manifest.ec4c870a27b90916533bf2d7dc417087.js": "/time-tracking-demo/precache-manifest.ec4c870a27b90916533bf2d7dc417087.js",
+    "service-worker.js": "/time-tracking-demo/service-worker.js",
+    "static/css/main.3fa08c2a.chunk.css.map": "/time-tracking-demo/static/css/main.3fa08c2a.chunk.css.map",
+    "static/js/2.36b7aa5c.chunk.js.LICENSE": "/time-tracking-demo/static/js/2.36b7aa5c.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c052417f.js",
+    "static/js/2.36b7aa5c.chunk.js",
+    "static/css/main.3fa08c2a.chunk.css",
+    "static/js/main.9263c542.chunk.js"
+  ]
 }
