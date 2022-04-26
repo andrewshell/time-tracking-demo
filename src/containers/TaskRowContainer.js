@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { continueTask, deleteTime } from '../actions';
-import TaskRow from '../components/TaskRow/TaskRow';
+import TaskRow from '../components/TaskRow';
 
 const mapStateToProps = (state, ownProps) => ({
   task: ownProps.task

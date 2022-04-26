@@ -1,4 +1,4 @@
-import * as moment from 'moment';
+import * as dayjs from 'dayjs';
 
 const tasks = (state = [], action) => {
   let i;
@@ -67,17 +67,17 @@ const reorderState = (a, b) => {
 };
 
 const recalculateDurations = (currentTime, index, state) => {
-  let today = moment().format('YYYY-MM-DD ');
+  let today = dayjs().format('YYYY-MM-DD ');
   let nextTime = null;
 
   if (undefined === state[index - 1]) {
-    nextTime = moment().startOf('minute').format('HH:mm');
+    nextTime = dayjs().startOf('minute').format('HH:mm');
   } else {
     nextTime = state[index - 1].recordedTime;
   }
 
   let duration = Math.max(0, parseInt(
-    moment(today + nextTime + ':00')
+    dayjs(today + nextTime + ':00')
       .diff(today + currentTime.recordedTime + ':00', 'minutes'),
     10
   ));

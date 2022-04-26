@@ -1,17 +1,17 @@
 import React from 'react';
-import { render } from 'react-dom'
+import ReactDOM from 'react-dom/client';
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import App from './components/App/App';
+import App from './components/App';
 import { setCurrentTime } from './actions';
 import rootReducer from './reducers'
-import * as moment from 'moment';
+import * as dayjs from 'dayjs';
 
 const store = createStore(rootReducer)
 
-const timeoutSeconds = 60 - parseInt(moment().format('s'), 10);
+const timeoutSeconds = 60 - parseInt(dayjs().format('s'), 10);
 const updateCurrentTime = () => {
-  store.dispatch(setCurrentTime(moment().startOf('minute')));
+  store.dispatch(setCurrentTime(dayjs().startOf('minute')));
 };
 
 updateCurrentTime();
@@ -23,9 +23,12 @@ setTimeout(() => {
   setInterval(updateCurrentTime, 60000);
 }, timeoutSeconds * 1000);
 
-render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
-)
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>
+);
+

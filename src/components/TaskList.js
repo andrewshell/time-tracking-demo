@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import TaskRowContainer from '../../containers/TaskRowContainer';
-import styles from './TaskList.module.scss';
+import TaskRowContainer from '../containers/TaskRowContainer';
+import styles from './TaskList.module.css';
 
 class TaskList extends Component {
 

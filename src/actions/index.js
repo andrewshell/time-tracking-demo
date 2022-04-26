@@ -1,4 +1,4 @@
-import * as moment from 'moment';
+import * as dayjs from 'dayjs';
 
 export const putTime = (recordedTime, taskName) => ({
   type: 'PUT_TIME',
@@ -13,7 +13,7 @@ export const deleteTime = (recordedTime) => ({
 
 export const continueTask = (taskName) => {
   return putTime(
-    moment().format('HH:mm'),
+    dayjs().format('HH:mm'),
     taskName
   );
 };

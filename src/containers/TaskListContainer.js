@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import TaskList from '../components/TaskList/TaskList'
+import TaskList from '../components/TaskList'
 
 const mapStateToProps = (state, ownProps) => ({
   tasks: recordedTasks(state)

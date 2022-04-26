@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import styles from './EntryForm.module.scss';
+import styles from './EntryForm.module.css';
 
 class EntryForm extends Component {
   state = {

@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import FormattedDuration from '../FormattedDuration/FormattedDuration';
-import TimeRow from '../TimeRow/TimeRow';
-import styles from './TaskRow.module.scss';
+import FormattedDuration from './FormattedDuration';
+import TimeRow from './TimeRow';
+import styles from './TaskRow.module.css';
 
 class TaskRow extends Component {
   state = {

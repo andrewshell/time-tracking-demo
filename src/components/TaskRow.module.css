@@ -1,0 +1,71 @@
+.TaskRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary {
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #E8E8E8;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 0 1em;
+}
+
+.summary:hover  button {
+  visibility: visible;
+}
+
+.toggleButton {
+  flex: 0 0 1.5em;
+}
+
+.toggleButton button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+  padding: 0.5em 0;
+  width: 100%;
+}
+
+.toggleButton button img {
+  width: 1.5em;
+  vertical-align: middle;
+}
+
+.duration {
+  flex: 0 0 4.5em;
+  padding-right: 1em;
+  text-align: right;
+}
+
+.taskName {
+  flex: 1 1;
+}
+
+.continueButton {
+  flex: 0 0;
+  padding-left: 0.5em;
+}
+
+.continueButton button {
+  background: transparent;
+  border: none;
+  color: #00aba9;
+  cursor: pointer;
+  flex: 0 0;
+  height: 100%;
+  padding: 0.7em 1em;
+  visibility: hidden;
+  width: 100%;
+}
+
+.continueButton button:hover {
+  background: #00aba9;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,73 @@
+.EntryForm {
+  align-items: stretch;
+  background-color: #fff;
+  border-bottom: 1px solid #E8E8E8;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 0 0 0 1em;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.EntryForm input {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: #1d1d1d;
+  display: block;
+  overflow: hidden;
+  padding: 0.7em 0;
+  width: 100%;
+}
+
+.EntryForm input[placeholder] {
+  text-overflow: ellipsis;
+}
+
+.resetButton {
+  flex: 0 0 1.5em;
+}
+
+.resetButton button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+.resetButton button img {
+  width: 1.5em;
+  vertical-align: middle;
+}
+
+.recordedTime {
+  flex: 0 0 4.5em;
+  padding-right: 1em;
+}
+
+.recordedTime input {
+  text-align: right;
+}
+
+.taskName {
+  flex: 1 1;
+}
+
+.startButton {
+  flex: 0 0;
+  padding-left: 0.5em;
+}
+
+.startButton button {
+  background: #00aba9;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 100%;
+  padding: 0.6em 1em;
+  width: 100%;
+}
