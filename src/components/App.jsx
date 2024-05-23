@@ -1,4 +1,3 @@
-import React from 'react';
 import EntryFormContainer from '../containers/EntryFormContainer';
 import TaskListContainer from '../containers/TaskListContainer';
 import styles from './App.module.css';
