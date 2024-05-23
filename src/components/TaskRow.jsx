@@ -1,77 +1,57 @@
-import React, {Component} from 'react';
+import { useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import FormattedDuration from './FormattedDuration';
 import TimeRow from './TimeRow';
 import styles from './TaskRow.module.css';
 
-class TaskRow extends Component {
-  state = {
-    expanded: false
-  };
+function TaskRow({ task, continueTask, deleteTime }) {
+  const [expanded, setExpanded] = useState(false);
 
-  constructor(props) {
-    super(props);
+  const toggleDetails = useCallback(() => {
+    setExpanded(prevExpanded => !prevExpanded);
+  }, []);
 
-    this.continueTask = this.continueTask.bind(this);
-    this.deleteTime = this.deleteTime.bind(this);
-    this.toggleDetails = this.toggleDetails.bind(this);
-  }
+  const handleContinueTask = useCallback(() => {
+    continueTask(task);
+  }, [continueTask, task]);
 
-  get arrowIcon() {
-    if (this.state.expanded) {
-      return 'img/md-arrow-dropdown.svg';
-    }
+  const handleDeleteTime = useCallback((time) => {
+    deleteTime(time);
+  }, [deleteTime]);
 
-    return 'img/md-arrow-dropright.svg';
-  }
+  const arrowIcon = expanded ? 'img/md-arrow-dropdown.svg' : 'img/md-arrow-dropright.svg';
 
-  toggleDetails() {
-    this.setState({
-      expanded: !this.state.expanded
-    });
-  }
-
-  continueTask() {
-    this.props.continueTask(this.props.task);
-  }
-
-  deleteTime(time) {
-    this.props.deleteTime(time);
-  }
-
-  render() {
-    return (
-      <div className={ styles.TaskRow }>
-        <div className={ styles.summary }>
-          <div className={ styles.toggleButton }>
-            <button type="button" onClick={ this.toggleDetails }>
-              <img src={ this.arrowIcon } alt="Toggle" />
-            </button>
-          </div>
-          <div className={ styles.duration }>
-            <FormattedDuration duration={ this.props.task.duration }></FormattedDuration>
-          </div>
-          <div className={ styles.taskName }>
-            { this.props.task.taskName }
-          </div>
-          <div className={ styles.continueButton }>
-            <button type="button" onClick={ this.continueTask }>Continue</button>
-          </div>
+  return (
+    <div className={ styles.TaskRow }>
+      <div className={ styles.summary }>
+        <div className={ styles.toggleButton }>
+          <button type="button" onClick={ toggleDetails }>
+            <img src={ arrowIcon } alt="Toggle" />
+          </button>
         </div>
-        <div className={ this.state.expanded ? styles.details : styles.hidden }>
-        {this.props.task.timeEntries.map((time, i) => {
-          return (
-            <TimeRow
-              key={ time.recordedTime }
-              time={ time }
-              deleteTime={ this.deleteTime }
-            ></TimeRow>
-          )
-        })}
+        <div className={ styles.duration }>
+          <FormattedDuration duration={ task.duration } />
+        </div>
+        <div className={ styles.taskName }>
+          { task.taskName }
+        </div>
+        <div className={ styles.continueButton }>
+          <button type="button" onClick={ handleContinueTask }>Continue</button>
         </div>
       </div>
-    )
-  }
+      <div className={ expanded ? styles.details : styles.hidden }>
+      {task.timeEntries.map((time, i) => {
+        return (
+          <TimeRow
+            key={ time.recordedTime }
+            time={ time }
+            deleteTime={ handleDeleteTime }
+          />
+        )
+      })}
+      </div>
+    </div>
+  )
 }
 
 TaskRow.propTypes = {

@@ -1,4 +1,4 @@
-import * as dayjs from 'dayjs';
+import dayjs from 'dayjs';
 
 export const putTime = (recordedTime, taskName) => ({
   type: 'PUT_TIME',

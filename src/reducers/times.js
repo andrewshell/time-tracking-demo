@@ -1,6 +1,6 @@
-import * as dayjs from 'dayjs';
+import dayjs from 'dayjs';
 
-const tasks = (state = [], action) => {
+function tasks(state = [], action) {
   let i;
 
   switch (action.type) {
@@ -62,11 +62,11 @@ const tasks = (state = [], action) => {
   }
 };
 
-const reorderState = (a, b) => {
+function reorderState(a, b) {
   return b.recordedTime.localeCompare(a.recordedTime);
-};
+}
 
-const recalculateDurations = (currentTime, index, state) => {
+function recalculateDurations (currentTime, index, state) {
   let today = dayjs().format('YYYY-MM-DD ');
   let nextTime = null;
 
@@ -89,6 +89,6 @@ const recalculateDurations = (currentTime, index, state) => {
   return Object.assign({}, currentTime, {
     duration: duration
   });
-};
+}
 
 export default tasks
