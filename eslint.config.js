@@ -9,5 +9,6 @@ const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({ baseDirectory: __dirname, recommendedConfig: pluginJs.configs.recommended });
 
 export default [
-  ...compat.extends('semistandard')
+  ...compat.extends('semistandard'),
+  ...compat.extends('plugin:promise/recommended')
 ];

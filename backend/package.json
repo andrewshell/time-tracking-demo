@@ -10,5 +10,8 @@
     "lint:fix": "eslint . --fix"
   },
   "author": "Andrew Shell <andrew@andrewshell.org>",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  }
 }
