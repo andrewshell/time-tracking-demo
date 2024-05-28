@@ -1,4 +1,4 @@
-function currentTime(state = [], action) {
+function currentTime (state = [], action) {
   switch (action.type) {
     case 'SET_CURRENT_TIME':
       return action.time;
@@ -7,4 +7,4 @@ function currentTime(state = [], action) {
   }
 }
 
-export default currentTime
+export default currentTime;

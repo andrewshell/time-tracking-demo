@@ -4,7 +4,7 @@ import FormattedDuration from './FormattedDuration';
 import TimeRow from './TimeRow';
 import styles from './TaskRow.module.css';
 
-function TaskRow({ task, continueTask, deleteTime }) {
+function TaskRow ({ task, continueTask, deleteTime }) {
   const [expanded, setExpanded] = useState(false);
 
   const toggleDetails = useCallback(() => {
@@ -47,17 +47,17 @@ function TaskRow({ task, continueTask, deleteTime }) {
             time={ time }
             deleteTime={ handleDeleteTime }
           />
-        )
+        );
       })}
       </div>
     </div>
-  )
+  );
 }
 
 TaskRow.propTypes = {
   task: PropTypes.object.isRequired,
   continueTask: PropTypes.func.isRequired,
   deleteTime: PropTypes.func.isRequired
-}
+};
 
 export default TaskRow;

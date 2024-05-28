@@ -2,13 +2,13 @@ import dayjs from 'dayjs';
 
 export const putTime = (recordedTime, taskName) => ({
   type: 'PUT_TIME',
-  recordedTime: recordedTime,
-  taskName: taskName
+  recordedTime,
+  taskName
 });
 
 export const deleteTime = (recordedTime) => ({
   type: 'DELETE_TIME',
-  recordedTime: recordedTime
+  recordedTime
 });
 
 export const continueTask = (taskName) => {
@@ -20,5 +20,5 @@ export const continueTask = (taskName) => {
 
 export const setCurrentTime = (time) => ({
   type: 'SET_CURRENT_TIME',
-  time: time
+  time
 });

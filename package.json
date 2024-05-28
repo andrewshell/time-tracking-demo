@@ -3,29 +3,28 @@
   "version": "0.2.0",
   "private": true,
   "type": "module",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "pnpm -r lint",
+    "lint:fix": "pnpm -r lint:fix"
   },
-  "dependencies": {
-    "dayjs": "^1.11.11",
-    "prop-types": "^15.8.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-redux": "^9.1.2",
-    "redux": "^5.0.1"
-  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "author": "Andrew Shell <andrew@andrewshell.org>",
+  "license": "MIT",
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@vitejs/plugin-react": "^4.2.1",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.3.0",
+    "acorn": "^8.11.3",
     "eslint": "^8.57.0",
-    "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
-    "vite": "^5.2.0",
-    "vite-plugin-eslint": "^1.8.1"
+    "eslint-config-semistandard": "^17.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.34.2",
+    "globals": "^15.3.0"
   }
 }

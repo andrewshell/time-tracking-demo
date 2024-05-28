@@ -1,0 +1,14 @@
+{
+  "name": "backend",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "author": "Andrew Shell <andrew@andrewshell.org>",
+  "license": "MIT"
+}

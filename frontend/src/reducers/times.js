@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 
-function tasks(state = [], action) {
-  let i;
+function tasks (state = [], action) {
+  let i, newState, latest;
 
   switch (action.type) {
     case 'PUT_TIME':
@@ -9,9 +9,7 @@ function tasks(state = [], action) {
         return action.recordedTime === timeEntry.recordedTime;
       });
 
-      let newState;
-
-      if (-1 === i) {
+      if (i === -1) {
         newState = state;
       } else {
         newState = [
@@ -27,14 +25,14 @@ function tasks(state = [], action) {
           taskName: action.taskName
         }
       ]
-      .sort(reorderState)
-      .map(recalculateDurations);
+        .sort(reorderState)
+        .map(recalculateDurations);
     case 'DELETE_TIME':
       i = state.findIndex((timeEntry) => {
         return action.recordedTime === timeEntry.recordedTime;
       });
 
-      if (-1 === i) {
+      if (i === -1) {
         return state;
       }
 
@@ -43,11 +41,11 @@ function tasks(state = [], action) {
         ...state.slice(i + 1)
       ].map(recalculateDurations);
     case 'SET_CURRENT_TIME':
-      if (0 === state.length) {
+      if (state.length === 0) {
         return state;
       }
 
-      let latest = Object.assign({}, state[0]);
+      latest = Object.assign({}, state[0]);
       latest.duration = action.time.diff(
         action.time.format('YYYY-MM-DD ') + latest.recordedTime + ':00',
         'minutes'
@@ -58,16 +56,16 @@ function tasks(state = [], action) {
         ...state.slice(1)
       ];
     default:
-      return state
+      return state;
   }
-};
+}
 
-function reorderState(a, b) {
+function reorderState (a, b) {
   return b.recordedTime.localeCompare(a.recordedTime);
 }
 
 function recalculateDurations (currentTime, index, state) {
-  let today = dayjs().format('YYYY-MM-DD ');
+  const today = dayjs().format('YYYY-MM-DD ');
   let nextTime = null;
 
   if (undefined === state[index - 1]) {
@@ -76,7 +74,7 @@ function recalculateDurations (currentTime, index, state) {
     nextTime = state[index - 1].recordedTime;
   }
 
-  let duration = Math.max(0, parseInt(
+  const duration = Math.max(0, parseInt(
     dayjs(today + nextTime + ':00')
       .diff(today + currentTime.recordedTime + ':00', 'minutes'),
     10
@@ -87,8 +85,8 @@ function recalculateDurations (currentTime, index, state) {
   }
 
   return Object.assign({}, currentTime, {
-    duration: duration
+    duration
   });
 }
 
-export default tasks
+export default tasks;

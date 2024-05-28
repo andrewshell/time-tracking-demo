@@ -2,7 +2,7 @@ import EntryFormContainer from '../containers/EntryFormContainer';
 import TaskListContainer from '../containers/TaskListContainer';
 import styles from './App.module.css';
 
-function App() {
+function App () {
   return (
     <div className={ styles.App }>
       <EntryFormContainer></EntryFormContainer>
@@ -10,7 +10,7 @@ function App() {
         <TaskListContainer></TaskListContainer>
       </div>
     </div>
-  )
+  );
 }
 
 export default App;

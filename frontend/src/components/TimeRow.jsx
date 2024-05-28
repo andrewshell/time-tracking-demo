@@ -3,7 +3,7 @@ import FormattedDuration from './FormattedDuration';
 import FormattedTime from './FormattedTime';
 import styles from './TimeRow.module.css';
 
-function TimeRow({ time, deleteTime }) {
+function TimeRow ({ time, deleteTime }) {
   const handleDelete = () => {
     deleteTime(time);
   };
@@ -20,12 +20,12 @@ function TimeRow({ time, deleteTime }) {
         <button type="button" onClick={ handleDelete }>Delete</button>
       </div>
     </div>
-  )
+  );
 }
 
 TimeRow.propTypes = {
   time: PropTypes.object.isRequired,
   deleteTime: PropTypes.func.isRequired
-}
+};
 
 export default TimeRow;

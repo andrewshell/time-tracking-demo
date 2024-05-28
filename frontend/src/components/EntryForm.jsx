@@ -2,7 +2,7 @@ import { useState, useRef, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import styles from './EntryForm.module.css';
 
-function EntryForm({ currentTime, recordTimeEntry }) {
+function EntryForm ({ currentTime, recordTimeEntry }) {
   const [editMode, setEditMode] = useState(false);
   const [recordedTime, setRecordedTime] = useState(currentTime.format('h:mm a'));
   const [taskName, setTaskName] = useState('');
@@ -102,7 +102,7 @@ function EntryForm({ currentTime, recordTimeEntry }) {
 
 EntryForm.propTypes = {
   currentTime: PropTypes.object.isRequired,
-  recordTimeEntry: PropTypes.func.isRequired,
+  recordTimeEntry: PropTypes.func.isRequired
 };
 
 export default EntryForm;

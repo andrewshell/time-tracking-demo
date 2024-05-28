@@ -1,6 +1,6 @@
-import { connect } from 'react-redux'
-import { putTime } from '../actions'
-import EntryForm from '../components/EntryForm'
+import { connect } from 'react-redux';
+import { putTime } from '../actions';
+import EntryForm from '../components/EntryForm';
 
 const mapStateToProps = (state, ownProps) => ({
   currentTime: state.currentTime
